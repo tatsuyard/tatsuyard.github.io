@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【ホテル宿泊者限定】鎌倉デジタル・コンシェルジュ・メディア</title>
+    <style>
+        /* 基本リセットとフォント */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* セクション共通スタイル */
+        section {
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: #fff;
+        }
+        h2 {
+            text-align: center;
+            color: #004d40; /* 深い緑色 */
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #004d40;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+            border-left: 5px solid #004d40;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        /* ファーストビュー (FV) */
+        #fv {
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            background-image: url('placeholder_kamakura_bg.jpg'); /* 背景画像URLに置き換え */
+            background-size: cover;
+            background-position: center;
+        }
+        #fv h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .main-copy {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffc107; /* 目を引く黄色 */
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #ff9800;
+        }
+
+        /* メリットと機能 */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .feature-box {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .feature-box strong {
+            display: block;
+            font-size: 1.2em;
+            color: #004d40;
+            margin-bottom: 5px;
+        }
+
+        /* テーブル (導入メリット) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #e0f2f1;
+            color: #004d40;
+        }
+
+        /* クロージング */
+        #closing {
+            text-align: center;
+            background-color: #e8f5e9; /* 薄い緑 */
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="fv">
+        <h1>【もう迷わない】あなたの鎌倉滞在を、最高の体験に変える。</h1>
+        <p class="main-copy">
+            <strong>ホテル宿泊者専用</strong>。極上の旅を約束する、パーソナル・コンシェルジュ・メディア
+        </p>
+        <a href="#contact" class="cta-button">▶︎ メディアのデモを体験する（無料）</a>
+    </section>
+
+    <div class="container">
+        
+        <section id="benefits">
+            <h2 style="display: block;">旅の満足度を最大化する3つの約束</h2>
+            <p style="text-align: center;">一般的な観光ガイドや口コミサイトの情報に頼るのは、もう終わりにしませんか？</p>
+            <div class="grid-3">
+                <div class="feature-box">
+                    <strong>🔑 ホテル限定の厳選情報</strong>
+                    <p>ホテルスタッフと地元専門家が厳選。真の隠れ家グルメや穴場の体験など、富裕層の感性に響く上質な情報だけを掲載します。</p>
+                </div>
+                <div class="feature-box">
+                    <strong>🗺️ 徒歩圏内1kmにフォーカス</strong>
+                    <p>疲れる移動は不要です。貴ホテルの徒歩圏内にある、移動時間と手間を最小限にした完璧な散策ルートとスポットを提供します。</p>
+                </div>
+                <div class="feature-box">
+                    <strong>🗣️ 質の高い多言語対応</strong>
+                    <p>英語、簡体字、繁体字に対応。ネイティブチェック済の正確な表現で、ストレスフリーな情報収集をサポートします。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 style="display: block;">メディアの主な機能とコンテンツ</h2>
+            <p style="text-align: center;">旅の疑問を瞬時に解決するスマートな機能</p>
+
+            <h3>1. コンシェルジュ・セレクト</h3>
+            <p>ホテル周辺の「朝食に最適な静かな和食店」「特別な日のための高級寿司」など、富裕層が重視する詳細情報を完結にまとめています。</p>
+
+            <h3>2. テーマ別・パーソナル散策ルート</h3>
+            <p>滞在時間や目的に合わせ、「禅に触れる早朝ウォーキングコース」「人混みを避ける海沿いプライベート・ルート」など、質の高いオフピーク体験ルートを提供。</p>
+            
+            <h3>3. 安心を支えるライフライン情報</h3>
+            <p>旅の不安を解消する、「最寄りの24時間薬局」「緊急時の対応可能な病院」など、信頼できる緊急・生活情報を地図上で即座に表示。</p>
+        </section>
+
+        <section id="for-hotels">
+            <h2 style="display: block;">貴ホテルが導入するメリット</h2>
+            <p style="text-align: center;">付加価値の向上は、顧客満足度と利益に直結します</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>メリット</th>
+                        <th>解決できる課題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CS（顧客満足度）の飛躍的向上</strong></td>
+                        <td>「情報収集の手間」や「期待外れの体験」によるネガティブレビューを激減させます。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>コンシェルジュ業務の効率化</strong></td>
+                        <td>頻度の高い質問をメディアが自動対応。人的リソースをVIP対応に集中できます。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>平均単価（ADR）の維持・向上</strong></td>
+                        <td>競合にはない「限定のデジタルサービス」として、サービスの質と価値を向上させます。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="closing">
+            <h2 style="display: block;">お問い合わせと次のステップ</h2>
+            <p>
+                貴ホテルのサービスをネクストレベルへ。私たちは、貴ホテルのブランド価値を高める「デジタル・コンシェルジュ」を構築します。
+            </p>
+            <p>
+                まずは、貴ホテルの立地とターゲットに合わせた<strong>無料デモ</strong>をご体験ください。
+            </p>
+            <a href="#contact" class="cta-button">資料請求・無料デモ体験を申し込む</a>
+            <p class="contact-info">
+                お電話でのお問い合わせ：**00-0000-0000**（担当：山田）
+            </p>
+        </section>
+
+    </div></body>
+</html>
